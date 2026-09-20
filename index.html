@@ -18,7 +18,7 @@
 .voice-controls{display:flex;justify-content:center;gap:14px;margin-top:12px}
 .voice-backdrop.typed-mode .voice-controls{display:none}
 .settings-button,.dots,.quick-toggle,.week-today,.week-date-button,.appearance-options button,.editor-date-display,.editor-time-display,.editor-end-time-display,.time-save,.time-cancel,.note-viewer-link,.editor-trash{transition:transform .15s ease,background .18s ease,border-color .18s ease,box-shadow .18s ease}
-.settings-button,.dots,.quick-toggle,.week-today{border:1px solid color-mix(in srgb,var(--line) 78%,transparent);box-shadow:0 8px 24px #0002}
+.settings-button,.dots,.week-today{border:1px solid color-mix(in srgb,var(--line) 78%,transparent);box-shadow:0 8px 24px #0002}
 .settings-menu button,.week-picker button,.event-editor button,.time-picker button,.note-viewer button{border-color:color-mix(in srgb,var(--line) 78%,transparent)}
 button:focus-visible{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 28%,transparent)!important}
 .settings-search{flex:1;border:0;outline:0;background:0 0;color:var(--ink);font:400 14px Assistant,sans-serif;direction:rtl;text-align:right}
@@ -42,7 +42,7 @@ button:focus-visible{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 28%,tr
 .focus-event,.note-card{min-height:44px}
 .week-event::after,.all-day-event::after,.focus-event::after,.note-card::after{content:"";position:absolute;inset:-8px -4px;min-width:44px;min-height:44px}
 .week-event.dragging::after{inset:0}
-[aria-current="date"]{outline:2px solid color-mix(in srgb,var(--accent) 72%,transparent);outline-offset:2px}
+[aria-current="date"]{outline:0}
 .ses-sr-only{position:fixed!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 @media (max-height:620px){
   .voice-sheet{max-height:calc(100dvh - var(--keyboard-offset) - 8px);overflow:auto;overscroll-behavior:contain;padding-top:14px;padding-bottom:12px}
